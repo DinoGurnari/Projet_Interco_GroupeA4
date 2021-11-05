@@ -1,12 +1,12 @@
-## Projet Interconnexion Groupe 4
+# Projet Interconnexion Groupe 4
 
-# Package à récuperer :
+## Packages à récuperer :
     - docker
     - docker compose
 
-# Image à récuperer :
+## Image à récuperer :
     docker pull weibeld/ubuntu-networking
 
-# Etapes : 
-    docker compose up #Lance les containers
-    docker attach $id_container$ #Ouvre le container
+## Etapes : 
+    - docker compose up                 <!-- Lance les containers -->
+    - docker attach $id_container$      <!-- Ouvre le container -->
