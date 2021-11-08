@@ -29,4 +29,5 @@ Source : https://docs.docker.com/engine/install/linux-postinstall/
   - Docker : https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
   - GitGraph : https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
   - GitHub Pull Requests and Issues : https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
+  - Draw.io Integration : https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
   - GitHub : https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github
