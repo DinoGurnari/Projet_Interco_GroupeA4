@@ -18,7 +18,7 @@ Source : https://docs.docker.com/engine/install/linux-postinstall/
 ### 3 - Image à récuperer :
     docker pull weibeld/ubuntu-networking
 
-## Étapes pour utiliser docker : 
+## Commandes pour utiliser docker : 
     sudo systemctl start docker.service     <!-- Lancer docker -->
     sudo systemctl enable docker.service    <!-- Lancer automatiquement docker au démarrage -->
     docker compose up                       <!-- Lance les containers -->
