@@ -11,7 +11,7 @@ Source : https://docs.docker.com/engine/install/linux-postinstall/
 
     sudo groupadd docker
     sudo usermod -aG docker $USER
-    newgrp docker
+    newgrp docker                           <!-- Cette commande ne met à jour les groupes que sur le terminal ouvert il faut sinon relancer la session -->
     docker run hello-world                  <!-- Pour tester si le groupe à bien été créé -->
 
 ### 3 - Image à récuperer :
