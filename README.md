@@ -21,7 +21,7 @@ Source : https://docs.docker.com/engine/install/linux-postinstall/
     sudo systemctl start docker.service     <!-- Lancer docker -->
     sudo systemctl enable docker.service    <!-- Lancer automatiquement docker au démarrage -->
     docker compose up                       <!-- Lance les containers -->
-    docker attach $id_container$            <!-- Ouvre le container -->
+    docker attach $ID_CONTAINER             <!-- Ouvre le container -->
     CRTL+P CRTL+Q                           <!-- Quitte le container sans l'arreter -->
 
 ## Extensions VSCode utiles :
