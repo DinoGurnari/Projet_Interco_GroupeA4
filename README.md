@@ -16,8 +16,14 @@
 ### Image à récuperer :
     docker pull weibeld/ubuntu-networking
 
-## Etapes pour utiliser docker : 
+## Étapes pour utiliser docker : 
     sudo systemctl start docker.service     <!-- Lancer docker -->
     sudo systemctl enable docker.service    <!-- Lancer automatiquement docker au démarrage -->
     docker compose up                       <!-- Lance les containers -->
     docker attach $id_container$            <!-- Ouvre le container -->
+
+## Extensions VSCode utiles :
+  - Docker : https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
+  - GitGraph : https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
+  - GitHub Pull Requests and Issues : https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
+  - GitHub : https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github
