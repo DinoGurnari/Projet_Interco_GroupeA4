@@ -2,7 +2,7 @@
 
 ## Première utilisation :
 
-### 1 - Packages à récuperer :
+### 1 - Paquets à récuperer :
     docker
     docker-compose
 
