@@ -22,7 +22,10 @@ services:
 
 networks: 
   monReseau:
+    driver: overlay
+    attachable: true
+    driver_opts:
+      com.docker.network.bridge.name: br-1
     ipam:
-      driver: default
       config:
         - subnet: 6.6.6.0/24
