@@ -54,7 +54,7 @@ Dans Ubuntu :
     docker pull weibeld/ubuntu-networking
 
 ## Utiliser docker
-Tout graphiquement depuis l'application docker ou depuis VScode
+Tout graphiquement depuis l'application docker ou depuis VScode.
 Pour compiler le projet : dans explorateur de fichier aller dans le dossier testcompose faire maj+clic droit et ouvrir l'interpreteur de commade linux.
 taper : 
     
