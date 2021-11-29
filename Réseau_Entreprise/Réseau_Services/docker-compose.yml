@@ -7,7 +7,7 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      monReseau:
+      Reseau_service:
         ipv4_address: 120.0.74.5
   
   ordi2:
@@ -17,7 +17,7 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      monReseau:
+      Reseau_service:
         ipv4_address: 120.0.74.2
 
   ordi3:
@@ -27,11 +27,11 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      monReseau:
+      Reseau_service:
         ipv4_address: 120.0.74.3
 
 networks: 
-  monReseau:
+  Reseau_service:
 #    driver: overlay
 #    attachable: true
 #    driver_opts:
