@@ -44,3 +44,4 @@ networks:
         - subnet: 192.168.66.0/24
   Reseau_entreprise:
     external: true
+    driver: overlay 
