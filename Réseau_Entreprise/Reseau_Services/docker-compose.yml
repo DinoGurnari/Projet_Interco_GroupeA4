@@ -29,8 +29,8 @@ services:
     networks:
       Reseau_service:
         ipv4_address: 120.0.74.3
-      #Reseau_site_principale:
-      # ipv4_address: 120.0.72.2/22
+      Reseau_entreprise:
+        ipv4_address: 120.0.72.2
       #Réseau du swarm
 
 networks: 
@@ -42,3 +42,5 @@ networks:
     ipam:
       config:
         - subnet: 120.0.74.0/23
+  Reseau_entreprise:
+    external: true
