@@ -44,3 +44,4 @@ networks:
         - subnet: 120.0.74.0/23
   Reseau_entreprise:
     external: true
+    driver: overlay
