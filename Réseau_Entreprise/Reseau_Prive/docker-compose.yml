@@ -28,7 +28,7 @@ services:
     restart: on-failure
     networks:
       Reseau_privee:
-        ipv4_address: 192.168.66.1
+        ipv4_address: 192.168.66.4
       Reseau_entreprise:
         ipv4_address: 120.0.72.3
       #Réseau du swarm
