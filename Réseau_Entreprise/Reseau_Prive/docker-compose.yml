@@ -22,7 +22,7 @@ services:
   
   routeur:
     image: weibeld/ubuntu-networking
-    container_name: routeur_privé
+    container_name: routeur_prive
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     restart: on-failure
