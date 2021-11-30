@@ -7,7 +7,7 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      Reseau_privee:
+      Reseau_prive:
         ipv4_address: 192.168.66.2
   
   ordi2:
@@ -17,7 +17,7 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      Reseau_privee:
+      Reseau_prive:
         ipv4_address: 192.168.66.3
   
   routeur:
@@ -27,14 +27,14 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      Reseau_privee:
+      Reseau_prive:
         ipv4_address: 192.168.66.4
       Reseau_entreprise:
         ipv4_address: 120.0.72.3
       #Réseau du swarm
 
 networks: 
-  Reseau_privee:
+  Reseau_prive:
 #    driver: overlay
 #    attachable: true
 #    driver_opts:
