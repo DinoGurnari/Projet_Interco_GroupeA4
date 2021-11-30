@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  ordi1:
+  dns:
     image: sameersbn/bind:9.16.1-20200524
     container_name: dnsserver
     stdin_open: true # docker run -i
@@ -10,7 +10,7 @@ services:
       Reseau_service:
         ipv4_address: 120.0.74.5
   
-  ordi2:
+  sip:
     image: dwilkie/linphone-docker
     container_name: sipserver
     stdin_open: true # docker run -i
@@ -20,7 +20,7 @@ services:
       Reseau_service:
         ipv4_address: 120.0.74.2
 
-  ordi3:
+  routeur:
     image: weibeld/ubuntu-networking
     container_name: routeur_prive_service
     stdin_open: true # docker run -i
