@@ -4,7 +4,9 @@ Hugo - Ghislain - Dino
 
   - [X] 1 - Créer les docker-compose files
   - [X] 2 - Connecter les machines et créer le swarm
-  -  3 - Tester les services
+  -  3 - Tester les services :
+     -  Ghislain : Faire le NAT
+     -  Hugo : DNS, SIP, etc.
 
 # Commandes utilisées
 
