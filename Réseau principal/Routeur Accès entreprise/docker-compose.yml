@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.7"
 services:
   ordi1:
     image: weibeld/ubuntu-networking
@@ -11,21 +11,22 @@ services:
         ipv4_address: 6.6.6.10
   
   ordi2:
-    image: weibeld/ubuntu-networking
+    image: frrouting/frr:v7.5.0
     container_name: ubuntu2
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     restart: on-failure
+    privileged: true 
     networks:
       monReseau:
         ipv4_address: 6.6.6.6
 
 networks: 
   monReseau:
-    driver: overlay
-    attachable: true
-    driver_opts:
-      com.docker.network.bridge.name: br-1
+    #driver: overlay
+    #attachable: true
+    #driver_opts:
+    #  com.docker.network.bridge.name: br-1
     ipam:
       config:
         - subnet: 6.6.6.0/24
