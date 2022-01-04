@@ -7,6 +7,7 @@ Hugo - Ghislain - Dino
   -  3 - Tester les services :
      -  Ghislain : Faire le NAT
      -  Hugo : DNS, SIP, etc.
+     -  Dino : Mettre en place le routage
 
 # Commandes utilisées
 
