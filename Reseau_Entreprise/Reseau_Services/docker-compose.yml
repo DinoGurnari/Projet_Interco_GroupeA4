@@ -1,0 +1,47 @@
+version: "3.7"
+services:
+  dns:
+    image: sameersbn/bind:9.16.1-20200524
+    container_name: dnsserver2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_service:
+        ipv4_address: 120.0.74.5
+  
+  sip:
+    image: dwilkie/linphone-docker
+    container_name: sipserver2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_service:
+        ipv4_address: 120.0.74.10
+
+  routeur:
+    image: weibeld/ubuntu-networking
+    container_name: routeur_prive_service2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_service:
+        ipv4_address: 120.0.74.4
+      #reseau_entreprise:
+        #ipv4_address: 120.0.72.2
+      #Réseau du swarm
+
+networks: 
+  Reseau_service:
+#    driver: overlay
+#    attachable: true
+#    driver_opts:
+#      com.docker.network.bridge.name: br-1
+    ipam:
+      config:
+        - subnet: 120.0.74.0/23
+  #reseau_entreprise:
+  #  external: true
+  #  driver: overlay

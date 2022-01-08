@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  ordi1:
+    image: weibeld/ubuntu-networking
+    container_name: machine1
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_prive:
+        ipv4_address: 192.168.66.2
+  
+  ordi2:
+    image: weibeld/ubuntu-networking
+    container_name: machine2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_prive:
+        ipv4_address: 192.168.66.3
+  
+  routeur:
+    image: weibeld/ubuntu-networking
+    container_name: routeur_prive
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    networks:
+      Reseau_prive:
+        ipv4_address: 192.168.66.4
+      #reseau_entreprise:
+      #  ipv4_address: 120.0.72.3
+      #Réseau du swarm
+
+networks: 
+  Reseau_prive:
+#    driver: overlay
+#    attachable: true
+#    driver_opts:
+#      com.docker.network.bridge.name: br-1
+    ipam:
+      config:
+        - subnet: 192.168.66.0/24
+#  reseau_entreprise:
+#    external: true
+#    driver: overlay 
