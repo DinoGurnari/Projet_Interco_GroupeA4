@@ -38,4 +38,4 @@ COPY named.conf.local /etc/bind/
 COPY db.societe.com /etc/bind/zones/
 
 # Run eternal loop
-CMD ["/bin/bash", "-c", "while :; do sleep 10; done"]
+#CMD ["/bin/bash", "-c", "while :; do sleep 10; done"]

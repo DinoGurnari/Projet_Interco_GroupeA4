@@ -5,3 +5,7 @@ sudo docker exec -d dns-server /etc/init.d/bind9 start
 sudo docker run -d --rm --name=dns-server --net=societe-net --ip=172.20.0.2 bind9
 
 sudo docker run -d --rm --name=dns-server --net=societe-net --ip=172.20.0.2 bind9
+
+sudo docker ps
+
+
