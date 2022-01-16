@@ -8,4 +8,7 @@ sudo docker run -d --rm --name=dns-server --net=societe-net --ip=172.20.0.2 bind
 
 sudo docker ps
 
+sudo docker build -t bind9 .
+
+sudo docker run -it --name=dns8-server --net=societe-net --ip=172.20.0.15 bind9
 
