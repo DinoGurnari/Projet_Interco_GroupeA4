@@ -1,0 +1,20 @@
+FROM frrouting/frr:v7.5.0
+
+RUN apt-get update \
+  && apt-get install -y \
+  bind9 \
+  bind9utils \
+  bind9-doc \
+  zebra
+  ##&& apt-get install -y net-tools iproute2 netcat dnsutils curl iputils-ping iptables nmap tcpdump
+
+# Enable IPv4
+RUN sed -i 's/OPTIONS=.*/OPTIONS="-4 -u bind"/' /etc/default/bind9
+
+# Copy configuration files
+COPY named.conf.options /etc/bind/
+COPY named.conf.local /etc/bind/
+COPY db.societe.com /etc/bind/zones/
+COPY daemons /etc/frr/
+COPY frr.conf /etc/frr/
+COPY vtysh.conf /etc/frr/ 
