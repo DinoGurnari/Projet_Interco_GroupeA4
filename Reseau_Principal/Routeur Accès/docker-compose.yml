@@ -35,6 +35,10 @@ services:
     privileged: true 
     networks:
       reseaupublic:
+    reseau_principal:
+        ipv4_address: 120.0.64.1
+      #Réseau du swarm
+
 
 
 networks: 
