@@ -6,9 +6,9 @@ services:
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     restart: on-failure
-    networks:
-      Reseau_prive:
-        ipv4_address: 192.168.40.10
+    # networks:
+   #   Reseau_prive:
+    #    ipv4_address: 192.168.40.10
   
   routeur1:
     image: weibeld/ubuntu-networking
@@ -17,12 +17,12 @@ services:
     tty: true        # docker run -t
     restart: on-failure
     networks:
-      Reseau_prive:
-        ipv4_address: 192.168.40.20
+#      - Reseau_prive:
+        #ipv4_address: 192.168.40.20
 
       
-      #reseau_principal:
-      #  ipv4_address: 120.0.64.1
+       reseau_prive_bis:
+        ipv4_address: 192.168.64.11
       #Réseau du swarm
 
 
@@ -34,28 +34,26 @@ services:
     restart: on-failure
     privileged: true 
     networks:
-      reseaupublic:
-    reseau_principal:
-        ipv4_address: 120.0.64.1
+    #  - reseaupublic:
+       reseau_prive_bis:
+        ipv4_address: 192.168.64.15
       #Réseau du swarm
 
 
 
 networks: 
-  Reseau_prive:
+  #- Reseau_prive:
    # driver: overlay
     #attachable: true
     #driver_opts:
      # com.docker.network.bridge.name: br-1
-    ipam:
-      config:
-        - subnet: 192.168.40.0/24
+   # ipam:
+    #  config:
+     #   - subnet: 192.168.40.0/24
 
-  reseau_principal:
-    #driver: overlay
-    #attachable: true
-    #driver_opts:
-     # com.docker.network.bridge.name: br-1
+
+  reseau_prive_bis:
+    driver: overlay
     ipam:
       config:
-        - subnet: 120.0.64.0/24
+        - subnet: 194.168.64.0/24
