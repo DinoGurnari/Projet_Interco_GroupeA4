@@ -19,6 +19,8 @@ services:
     networks:
       Reseau_prive:
         ipv4_address: 192.168.40.20
+
+      
       #reseau_principal:
       #  ipv4_address: 120.0.64.1
       #Réseau du swarm
