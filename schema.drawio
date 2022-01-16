@@ -158,7 +158,7 @@
                 <mxCell id="53" value="&lt;font color=&quot;#ff3333&quot;&gt;OSPF&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;opacity=10;" parent="1" vertex="1">
                     <mxGeometry x="490" y="200.5" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="Routeur&amp;nbsp;&lt;br&gt;réseau&lt;br&gt;privé&lt;br&gt;120.0.73.4" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="45" value="Routeur&amp;nbsp;&lt;br&gt;réseau&lt;br&gt;privé&lt;br&gt;120.0.72.4" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="680" y="366.77000000000004" width="35" height="23.23" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="Réseau&lt;br&gt;Privé" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;opacity=10;" parent="1" vertex="1">
