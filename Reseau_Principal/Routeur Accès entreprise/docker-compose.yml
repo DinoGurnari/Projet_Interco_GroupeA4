@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  
+  ordi2:
+    image: frrouting/frr:v7.5.0
+    container_name: ubuntu2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: on-failure
+    privileged: true 
+    networks:
+      reseaupublic:
+        ipv4_address: 120.0.64.10
+
+networks: 
+  reseaupublic:
+    driver: overlay
+    attachable: true
+    driver_opts:
+      com.docker.network.bridge.name: br-1
+    ipam:
+      config:
+        - subnet: 120.0.64.0/21

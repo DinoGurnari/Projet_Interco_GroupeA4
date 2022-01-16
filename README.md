@@ -59,3 +59,18 @@ Pour compiler le projet : dans explorateur de fichier aller dans le dossier test
 taper : 
     
     docker compose up
+
+### Utilisation de Dockerfile
+
+## Command
+RUN |OS de l'image|
+
+RUN |pour lancer une commande, ATTENTION pour apt-get install il faut rajouter -y sinon erreur|
+
+ADD |adresse local du fichier| |où mettre le fichier dans le docker|
+
+WORDIR |fichier où se déplacer| (similaire à cd)
+
+ENV |alias|=|variable de départ| (créer une variable d'environnement, on récupère la variable avec $alias)
+
+CMD |lance une commande lors de la création du container|

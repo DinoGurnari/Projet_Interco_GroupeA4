@@ -14,5 +14,5 @@ Hugo - Ghislain - Dino
     manager> docker swarm init --advertise-addr=<IP-ADDRESS-OF-MANAGER>
     workers> docker swarm join --token <TOKEN> --advertise-addr <IP-ADDRESS-OF-WORKER-1> <IP-ADDRESS-OF-MANAGER>:2377
     manager> docker network create --driver=overlay --attachable --subnet 120.0.72.0/23 reseau_entreprise
-    workers> docker network connect reseau_entreprise routeur-name
+    workers> docker network connect reseau_entreprise routeur-name --ip <IP-DU-ROUTEUR>
     dino> docker run -it --name routeur_dino weibeld/ubuntu-networking
