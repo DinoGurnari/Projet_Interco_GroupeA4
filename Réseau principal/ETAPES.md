@@ -12,3 +12,8 @@ Valentin - Seydina - Adrien - Félix
     workers> docker swarm join --token <TOKEN> --advertise-addr <IP-ADDRESS-OF-WORKER-1> <IP-ADDRESS-OF-MANAGER>:2377
     manager> docker network create --driver=overlay --attachable --subnet 120.0..0/23 reseau_public
     workers> docker network connect reseau_entreprise routeur-name
+
+
+
+## Pour Seydina
+    regarder docker file pour creer des containers.
