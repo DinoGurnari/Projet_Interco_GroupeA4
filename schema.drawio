@@ -53,13 +53,16 @@
                         <mxPoint x="-14" y="58" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" value="Routeur Interco&lt;br&gt;120.0.72.3" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="83" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="75">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Routeur Interco&lt;br&gt;120.0.64.3" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="370" y="180" width="55" height="36.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Routeur&lt;br&gt;Accés Ent.&lt;br&gt;120.0.72.5" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="3" value="Routeur&lt;br&gt;Accés Ent.&lt;br&gt;120.0.64.5" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="490" y="260" width="55" height="36.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Routeur Accés&lt;br&gt;120.0.72.4" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="4" value="Routeur Accés&lt;br&gt;120.0.64.4" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="250" y="260" width="55" height="36.5" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="" style="endArrow=none;html=1;strokeColor=#f0f0f0;strokeWidth=1;" parent="1" source="20" target="4" edge="1">
@@ -104,7 +107,10 @@
                 <mxCell id="36" value="Client" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.laptop_1;fillColor=#2a2a2a;opacity=30;" parent="1" vertex="1">
                     <mxGeometry x="120" y="110" width="43.73" height="37" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="Box&lt;br&gt;120.0.72.8" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="84" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="20" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Box&lt;br&gt;120.0.64.8" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="200" y="210" width="35" height="23.23" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="(DNS)" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.dns_server;" parent="1" vertex="1">
@@ -116,7 +122,7 @@
                 <mxCell id="41" value="Services Entreprise" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;opacity=10;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="101.87" width="40" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="Routeur Services&lt;br&gt;120.0.73.3" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="44" value="Routeur Services&lt;br&gt;120.0.72.3" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="770" y="220.5" width="35" height="23.23" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" value="" style="endArrow=none;html=1;" parent="1" source="44" target="25" edge="1">
@@ -137,7 +143,7 @@
                         <mxPoint x="840" y="180" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="49" value="DNS&lt;br&gt;120.0.72.7" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.dns_server;" parent="1" vertex="1">
+                <mxCell id="49" value="DNS&lt;br&gt;120.0.64.7" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.dns_server;" parent="1" vertex="1">
                     <mxGeometry x="390.76" y="321.89" width="46.5" height="56.23" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="" style="endArrow=none;html=1;" parent="1" source="75" target="49" edge="1">
@@ -167,7 +173,7 @@
                         <mxPoint x="1060" y="340" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="33" value="Routeur&amp;nbsp;Ent.&lt;br&gt;120.0.72.6&lt;br&gt;120.0.73.2" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
+                <mxCell id="33" value="Routeur&amp;nbsp;Ent.&lt;br&gt;120.0.64.6&lt;br&gt;120.0.72.2" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;" parent="1" vertex="1">
                     <mxGeometry x="640" y="265.08" width="45" height="29.86" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" value="Machine 2" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.laptop_1;fillColor=#2a2a2a;opacity=30;" parent="1" vertex="1">
