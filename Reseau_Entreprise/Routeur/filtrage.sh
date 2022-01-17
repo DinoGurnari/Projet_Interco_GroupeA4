@@ -34,8 +34,9 @@ iptables -A INPUT -p tcp -i eth0 --dport ssh -j ACCEPT
 iptables -A INPUT -p tcp -i eth0 --dport 80 -j ACCEPT
 
 ## On accepte les ping
-iptables -A OUTPUT -p icmp -m conntrack --ctstate NEW,ESTABLISHED,RELATED -j ACCEPT
 iptables -A INPUT -p icmp -j ACCEPT
+iptables -A OUTPUT -p icmp -j ACCEPT
+iptables -A FORWARD -p icmp -j ACCEPT
  
 ## On drop tous les paquets broadcastés
 iptables -A INPUT -m pkttype --pkt-type broadcast -j DROP
