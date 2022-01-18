@@ -28,11 +28,11 @@ iptables -A INPUT -m conntrack --ctstate INVALID -p tcp --tcp-flags ALL NONE -j 
 iptables -A INPUT -m conntrack --ctstate INVALID -p tcp --tcp-flags SYN,RST SYN,RST -j DROP
 
 ## On accepte les connexions ssh
-iptables -A INPUT -p tcp -i eth0 --dport ssh -j ACCEPT
+iptables -A FORWARD -p tcp -i eth0 --dport ssh -j ACCEPT
 
 ## On accepte les connexion Web (port 80)
-iptables -A INPUT -p tcp -i eth0 --dport 80 -j ACCEPT
-
+iptables -I FORWARD -p tcp -m tcp --sport 80 -j ACCEPT
+iptables -I FORWARD -p tcp -m tcp --sport 443 -j ACCEPT
 ## On accepte les ping
 iptables -A INPUT -p icmp -j ACCEPT
 iptables -A OUTPUT -p icmp -j ACCEPT
